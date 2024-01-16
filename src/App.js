@@ -8,12 +8,12 @@ function App() {
   return (
     <Router>
       <nav>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
+        <Link to="/srilakshmi-tailors-spa">Home</Link>
+        <Link to="/srilakshmi-tailors-spa/about">About</Link>
       </nav>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/srilakshmi-tailors-spa" element={<Home />} />
+        <Route path="/srilakshmi-tailors-spa/about" element={<About />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
