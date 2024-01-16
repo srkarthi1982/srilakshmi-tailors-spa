@@ -9,11 +9,11 @@ function App() {
     <Router>
       <nav>
         <Link to="/srilakshmi-tailors-spa">Home</Link>
-        <Link to="/srilakshmi-tailors-spa/about">About</Link>
+        <Link to="/srilakshmi-tailors-spa/#/about">About</Link>
       </nav>
       <Routes>
         <Route path="/srilakshmi-tailors-spa" element={<Home />} />
-        <Route path="/srilakshmi-tailors-spa/about" element={<About />} />
+        <Route path="/srilakshmi-tailors-spa/#/about" element={<About />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
