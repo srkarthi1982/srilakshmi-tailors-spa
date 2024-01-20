@@ -2,7 +2,9 @@
 import cx from 'clsx';
 import "@mantine/core/styles.css";
 import React, { useState } from "react";
-import { Text, Flex, UnstyledButton, ThemeIcon, rem, Button, Center, Box, Divider, SimpleGrid, useSafeMantineTheme, Menu, Avatar, Stack, Popover } from "@mantine/core";
+import { Text, Flex, UnstyledButton, ThemeIcon, rem, Button, Center, Box, Divider, SimpleGrid, useSafeMantineTheme,  
+    useComputedColorScheme
+    , Menu, Avatar, Stack, Popover } from "@mantine/core";
 import { Burger, Group } from '@mantine/core';
 import classes from '../styles/HeaderMegaMenu.module.css';
 import Logo from '../favicon.png';
@@ -81,6 +83,7 @@ function AppHeader({ mobileOpened, desktopOpened, toggleMobile, toggleDesktop, a
     const [userMenuOpened, setUserMenuOpened] = useState(false);
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [openProduct, setOpenProduct] = useState(false);
+    const computedColorScheme = useComputedColorScheme('light', { getInitialValueInEffect: true });
     // const pathname = usePathname();
     const openAside = function () {
         asideToggleDesktop();
@@ -111,7 +114,7 @@ function AppHeader({ mobileOpened, desktopOpened, toggleMobile, toggleDesktop, a
                 <Burger opened={mobileOpened} onClick={toggleMobile} hiddenFrom="sm" size="sm" />
                 <Burger opened={desktopOpened} onClick={toggleDesktop} visibleFrom="sm" size="sm" />
                 <Flex>
-                    <img src={Logo} width={36} height={36} alt='favicon' />
+                    <img src={Logo} width={36} height={36} alt='favicon' style={{filter: computedColorScheme === 'dark' ? 'invert(100%)' : ''}} />
                     <Text size='xl' fw={700}>Srilakshmi Tailors</Text>
                 </Flex>
             </Group>
