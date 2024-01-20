@@ -81,8 +81,11 @@ export default function AppNavbar() {
                     <SegmentedControl color="blue" fullWidth data={['English', 'தமிழ்']} />
                     <Group gap={5}>
                         <ActionIcon onClick={() => setColorScheme(computedColorScheme === 'light' ? 'dark' : 'light')} variant="outline" size="lg" aria-label="Theme Color">
-                            <IconSun className={classes.iconlight} size="20" stroke={1.5} />
-                            <IconMoon className={classes.icondark} size="20" stroke={1.5} />
+                            {
+                                computedColorScheme === 'light' ?
+                                <IconSun className={classes.iconlight} size="20" stroke={1.5} /> :
+                                <IconMoon className={classes.icondark} size="20" stroke={1.5} />
+                            }
                         </ActionIcon>
                     </Group>
                 </Group>
