@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunksrilakshmi_tailors_spa=self.webpackChunksrilakshmi_tailors_spa||[]).push([[289],{289:s=>{s.exports=function(){throw new Error("ws does not work in the browser. Browser clients must use the native WebSocket object")}}}]);
+//# sourceMappingURL=289.6acfd524.chunk.js.map
