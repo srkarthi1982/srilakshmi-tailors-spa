@@ -6,17 +6,11 @@ import { IconDots, IconEye, IconFileZip, IconTrash } from '@tabler/icons-react';
 function Home() {
     const [roles, setRoles] = useState([]);
     useEffect(() => {
-        const getRoles = async () => {
+        (async () => {
             const { data, error } = await supabase.from('roles').select('*');
-            debugger;
-            if (error) {
-                console.log('error', error);
-                return;
-            }
-            console.log('data', data);
+            if (error) return;
             setRoles(data);
-        }
-        getRoles();
+        })();
     }, [])
     return (
         <>
