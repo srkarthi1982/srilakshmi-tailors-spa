@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/srilakshmi-tailors-spa/static/css/main.f4ffbd9e.css",
-    "main.js": "/srilakshmi-tailors-spa/static/js/main.683db686.js",
+    "main.js": "/srilakshmi-tailors-spa/static/js/main.f74a52b2.js",
     "static/js/289.6acfd524.chunk.js": "/srilakshmi-tailors-spa/static/js/289.6acfd524.chunk.js",
     "static/js/787.0df279c2.chunk.js": "/srilakshmi-tailors-spa/static/js/787.0df279c2.chunk.js",
     "static/media/favicon.png": "/srilakshmi-tailors-spa/static/media/favicon.82104e15c324fc47fc95.png",
     "index.html": "/srilakshmi-tailors-spa/index.html",
     "main.f4ffbd9e.css.map": "/srilakshmi-tailors-spa/static/css/main.f4ffbd9e.css.map",
-    "main.683db686.js.map": "/srilakshmi-tailors-spa/static/js/main.683db686.js.map",
+    "main.f74a52b2.js.map": "/srilakshmi-tailors-spa/static/js/main.f74a52b2.js.map",
     "289.6acfd524.chunk.js.map": "/srilakshmi-tailors-spa/static/js/289.6acfd524.chunk.js.map",
     "787.0df279c2.chunk.js.map": "/srilakshmi-tailors-spa/static/js/787.0df279c2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f4ffbd9e.css",
-    "static/js/main.683db686.js"
+    "static/js/main.f74a52b2.js"
   ]
 }
