@@ -21,6 +21,7 @@ import Academy from './pages/Academy';
 import Support from './pages/Support';
 import Careers from './pages/Careers';
 import NotFound from './pages/NotFound';
+import Roles from "./pages/Roles";
 
 function App() {
   const theme = useSafeMantineTheme();
@@ -60,6 +61,7 @@ function App() {
                 <Route path="/academy" element={<Academy />} />
                 <Route path="/support" element={<Support />} />
                 <Route path="/careers" element={<Careers />} />
+                <Route path="/roles" element={<Roles />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </ModalsProvider>

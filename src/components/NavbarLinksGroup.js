@@ -11,7 +11,7 @@ export function LinksGroup({ icon: Icon, label, initiallyOpened, links }) {
     const items = (hasLinks ? links : []).map(l => (
         <Link
             className={classes.link}
-            href={l.link}
+            to={l.link}
             // data-active={pathname === l.link}
             key={l.label}>
             {l.label}
