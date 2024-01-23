@@ -22,13 +22,13 @@ import Support from './pages/Support';
 import Careers from './pages/Careers';
 import NotFound from './pages/NotFound';
 import Roles from "./pages/Roles";
-
 function App() {
   const theme = useSafeMantineTheme();
   const [mobileOpened, { toggle: toggleMobile }] = useDisclosure();
   const [desktopOpened, { toggle: toggleDesktop }] = useDisclosure(true);
   const [asideMobileOpened, { toggle: asideToggleMobile }] = useDisclosure();
   const [asideDesktopOpened, { toggle: asideToggleDesktop }] = useDisclosure(true);
+
   return (
     <Router>
       <MantineProvider theme={theme}>
@@ -90,7 +90,7 @@ function App() {
           </AppShell.Aside>
         </AppShell>
       </MantineProvider>
-    </Router>
+    </Router >
   );
 }
 export default App;

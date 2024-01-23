@@ -4,6 +4,7 @@ import { CloseButton, Group, Input, SimpleGrid, Text } from '@mantine/core';
 import { IconArrowLeft } from '@tabler/icons-react';
 import { useNavigate } from 'react-router-dom';
 import CardStrip from '../components/cardStrip';
+import CardStripSkeleton from '../components/cardStripSkeleton';
 function Roles() {
     const [roles, setRoles] = useState([]);
     const [value, setValue] = useState('');
@@ -42,17 +43,20 @@ function Roles() {
                     />
                 </Group>
             </Group>
+
             <SimpleGrid cols={{ base: 1, md: 1, lg: 2, xl: 3 }}>
                 {
-                    roles.map(role =>
-                        <CardStrip
-                            key={role.id}
-                            name={role.name}
-                            onAction={onAction}
-                            counter={`${10} Users`}
-                            data={role}
-                        />
-                    )
+                    roles.length === 0 ?
+                        Array.from({ length: 7 }, (_, index) => <CardStripSkeleton key={index} />) :
+                        roles.map(role =>
+                            <CardStrip
+                                key={role.id}
+                                name={role.name}
+                                onAction={onAction}
+                                counter={`${10} Users`}
+                                data={role}
+                            />
+                        )
                 }
             </SimpleGrid>
         </Fragment>
